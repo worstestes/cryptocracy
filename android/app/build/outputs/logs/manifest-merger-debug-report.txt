@@ -1,0 +1,244 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:1:1-26:12
+MERGED from [:react-native-navigation] /Users/genghis/cryptocracy/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-20:12
+MERGED from [:react-native-vector-icons] /Users/genghis/cryptocracy/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/genghis/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/53f85c452432ee3deac282ee277fc832/AndroidManifest.xml:2:1-15:12
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/genghis/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/89421488253707ef27389f1911930b95/AndroidManifest.xml:2:1-14:12
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/genghis/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/33e250a1847e40e903fe3d768e5e5492/AndroidManifest.xml:2:1-13:12
+MERGED from [com.android.support:design:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/683a0c91a8e890ad41520be4632a6894/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/7a76e4b4e5653c40d57e7ee0d35f25d8/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:transition:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/3346202c45212b696ce64f20a6dfa839/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/6f7967b3237d6fda61fcd62c6bae289b/AndroidManifest.xml:17:1-31:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/2c7edeb3535f76dcdd0d8547d75e4acf/AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/ca10e1f2a3570eaadafd91092cc0c1ce/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/516a6dd07ab562a0d5c9a0c0347ed7a6/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/039284f709d96f64efb2bbbec8828d0e/AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] /Users/genghis/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/215f2e026b49b9366e07bc22887ae201/AndroidManifest.xml:1:1-3:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/3d29bd4e98b91a44ec3793e5022efe6e/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/6bebcd762e6736c2e6dd16dcf632f1c8/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/66bda6eb19d827e491bf72aa2288b3ed/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/f9249515c037daf8d60579fea75ca66d/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/3bc4e2cdba3fddb18c8f0964794bf026/AndroidManifest.xml:17:1-26:12
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/genghis/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/1cd132a4cb5c9ebd126c54f35f224cef/AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/a2f9e810c81d2132a7ca023ab3e05c02/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/aaaac0ba2002c46cee8fa61f52e51f09/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/09fa1ba26313167bf57382bf8ad21eda/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/4d2f4996a16008bf80340363fbd65725/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/28df3e0fff2c5b7fbd21900b32a8e741/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/a4b85a941b5ed24a752c2493a4400bc3/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/582ca0c3006dabda18f67db5b1c4a361/AndroidManifest.xml:17:1-31:12
+INJECTED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:1:1-26:12
+INJECTED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:1:1-26:12
+	package
+		ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:2:5-30
+		INJECTED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:1:1-26:12
+		INJECTED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:5:5-77
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/genghis/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/53f85c452432ee3deac282ee277fc832/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/genghis/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/53f85c452432ee3deac282ee277fc832/AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:5:22-75
+application
+ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:7:5-24:19
+MERGED from [:react-native-navigation] /Users/genghis/cryptocracy/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-18:19
+MERGED from [:react-native-navigation] /Users/genghis/cryptocracy/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-18:19
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/genghis/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/53f85c452432ee3deac282ee277fc832/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/genghis/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/53f85c452432ee3deac282ee277fc832/AndroidManifest.xml:13:5-20
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/genghis/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/89421488253707ef27389f1911930b95/AndroidManifest.xml:12:5-20
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/genghis/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/89421488253707ef27389f1911930b95/AndroidManifest.xml:12:5-20
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/genghis/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/33e250a1847e40e903fe3d768e5e5492/AndroidManifest.xml:11:5-20
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/genghis/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/33e250a1847e40e903fe3d768e5e5492/AndroidManifest.xml:11:5-20
+MERGED from [com.android.support:design:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/683a0c91a8e890ad41520be4632a6894/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/683a0c91a8e890ad41520be4632a6894/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/7a76e4b4e5653c40d57e7ee0d35f25d8/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/7a76e4b4e5653c40d57e7ee0d35f25d8/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/3346202c45212b696ce64f20a6dfa839/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/3346202c45212b696ce64f20a6dfa839/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/6f7967b3237d6fda61fcd62c6bae289b/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/6f7967b3237d6fda61fcd62c6bae289b/AndroidManifest.xml:29:5-20
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/039284f709d96f64efb2bbbec8828d0e/AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/039284f709d96f64efb2bbbec8828d0e/AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/genghis/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/215f2e026b49b9366e07bc22887ae201/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/genghis/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/215f2e026b49b9366e07bc22887ae201/AndroidManifest.xml:2:3-17
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/genghis/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/1cd132a4cb5c9ebd126c54f35f224cef/AndroidManifest.xml:12:5-20
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/genghis/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/1cd132a4cb5c9ebd126c54f35f224cef/AndroidManifest.xml:12:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/a2f9e810c81d2132a7ca023ab3e05c02/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/a2f9e810c81d2132a7ca023ab3e05c02/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/aaaac0ba2002c46cee8fa61f52e51f09/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/aaaac0ba2002c46cee8fa61f52e51f09/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/09fa1ba26313167bf57382bf8ad21eda/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/09fa1ba26313167bf57382bf8ad21eda/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/4d2f4996a16008bf80340363fbd65725/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/4d2f4996a16008bf80340363fbd65725/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/28df3e0fff2c5b7fbd21900b32a8e741/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/28df3e0fff2c5b7fbd21900b32a8e741/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/a4b85a941b5ed24a752c2493a4400bc3/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/a4b85a941b5ed24a752c2493a4400bc3/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/582ca0c3006dabda18f67db5b1c4a361/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/582ca0c3006dabda18f67db5b1c4a361/AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:9:7-39
+	android:icon
+		ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:10:7-41
+	android:allowBackup
+		ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:11:7-34
+	android:theme
+		ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:12:7-38
+	android:name
+		ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:8:7-38
+activity#com.cryptocracy.MainActivity
+ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:13:7-22:18
+	android:label
+		ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:15:9-41
+	android:windowSoftInputMode
+		ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:17:9-51
+	android:configChanges
+		ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:16:9-79
+	android:name
+		ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:14:9-37
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:18:9-21:25
+action#android.intent.action.MAIN
+ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:19:13-65
+	android:name
+		ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:19:21-62
+category#android.intent.category.LAUNCHER
+ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:20:13-73
+	android:name
+		ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:20:23-70
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:23:7-84
+MERGED from [:react-native-navigation] /Users/genghis/cryptocracy/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:9-17:40
+MERGED from [:react-native-navigation] /Users/genghis/cryptocracy/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:15:9-17:40
+	android:exported
+		ADDED from [:react-native-navigation] /Users/genghis/cryptocracy/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:17:13-37
+	android:name
+		ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:23:17-81
+uses-sdk
+INJECTED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-navigation] /Users/genghis/cryptocracy/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-navigation] /Users/genghis/cryptocracy/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/genghis/cryptocracy/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] /Users/genghis/cryptocracy/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/genghis/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/53f85c452432ee3deac282ee277fc832/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/genghis/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/53f85c452432ee3deac282ee277fc832/AndroidManifest.xml:7:5-9:41
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/genghis/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/89421488253707ef27389f1911930b95/AndroidManifest.xml:8:5-10:41
+MERGED from [com.balysv.materialmenu:material-menu-toolbar:1.5.4] /Users/genghis/.gradle/caches/transforms-1/files-1.1/material-menu-toolbar-1.5.4.aar/89421488253707ef27389f1911930b95/AndroidManifest.xml:8:5-10:41
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/genghis/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/33e250a1847e40e903fe3d768e5e5492/AndroidManifest.xml:7:5-9:41
+MERGED from [com.aurelhubert:ahbottomnavigation:2.0.6] /Users/genghis/.gradle/caches/transforms-1/files-1.1/ahbottomnavigation-2.0.6.aar/33e250a1847e40e903fe3d768e5e5492/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/683a0c91a8e890ad41520be4632a6894/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/683a0c91a8e890ad41520be4632a6894/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/7a76e4b4e5653c40d57e7ee0d35f25d8/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/7a76e4b4e5653c40d57e7ee0d35f25d8/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:transition:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/3346202c45212b696ce64f20a6dfa839/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/3346202c45212b696ce64f20a6dfa839/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/6f7967b3237d6fda61fcd62c6bae289b/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/6f7967b3237d6fda61fcd62c6bae289b/AndroidManifest.xml:21:5-23:54
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/2c7edeb3535f76dcdd0d8547d75e4acf/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/2c7edeb3535f76dcdd0d8547d75e4acf/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/ca10e1f2a3570eaadafd91092cc0c1ce/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/ca10e1f2a3570eaadafd91092cc0c1ce/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/516a6dd07ab562a0d5c9a0c0347ed7a6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/516a6dd07ab562a0d5c9a0c0347ed7a6/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/039284f709d96f64efb2bbbec8828d0e/AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/039284f709d96f64efb2bbbec8828d0e/AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/3d29bd4e98b91a44ec3793e5022efe6e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/3d29bd4e98b91a44ec3793e5022efe6e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/6bebcd762e6736c2e6dd16dcf632f1c8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/6bebcd762e6736c2e6dd16dcf632f1c8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/66bda6eb19d827e491bf72aa2288b3ed/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/66bda6eb19d827e491bf72aa2288b3ed/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/f9249515c037daf8d60579fea75ca66d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/genghis/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/f9249515c037daf8d60579fea75ca66d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/3bc4e2cdba3fddb18c8f0964794bf026/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/3bc4e2cdba3fddb18c8f0964794bf026/AndroidManifest.xml:20:5-43
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/genghis/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/1cd132a4cb5c9ebd126c54f35f224cef/AndroidManifest.xml:8:5-10:41
+MERGED from [com.balysv.materialmenu:material-menu:1.5.4] /Users/genghis/.gradle/caches/transforms-1/files-1.1/material-menu-1.5.4.aar/1cd132a4cb5c9ebd126c54f35f224cef/AndroidManifest.xml:8:5-10:41
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/a2f9e810c81d2132a7ca023ab3e05c02/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/a2f9e810c81d2132a7ca023ab3e05c02/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/aaaac0ba2002c46cee8fa61f52e51f09/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/aaaac0ba2002c46cee8fa61f52e51f09/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/09fa1ba26313167bf57382bf8ad21eda/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/09fa1ba26313167bf57382bf8ad21eda/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/4d2f4996a16008bf80340363fbd65725/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/4d2f4996a16008bf80340363fbd65725/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/28df3e0fff2c5b7fbd21900b32a8e741/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/28df3e0fff2c5b7fbd21900b32a8e741/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/a4b85a941b5ed24a752c2493a4400bc3/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/a4b85a941b5ed24a752c2493a4400bc3/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/582ca0c3006dabda18f67db5b1c4a361/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/582ca0c3006dabda18f67db5b1c4a361/AndroidManifest.xml:21:5-23:58
+INJECTED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/683a0c91a8e890ad41520be4632a6894/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml
+activity#com.reactnativenavigation.controllers.NavigationActivity
+ADDED from [:react-native-navigation] /Users/genghis/cryptocracy/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:12:9-14:86
+	android:configChanges
+		ADDED from [:react-native-navigation] /Users/genghis/cryptocracy/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:14:13-83
+	android:name
+		ADDED from [:react-native-navigation] /Users/genghis/cryptocracy/node_modules/react-native-navigation/android/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:13:13-84
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/683a0c91a8e890ad41520be4632a6894/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/7a76e4b4e5653c40d57e7ee0d35f25d8/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/7a76e4b4e5653c40d57e7ee0d35f25d8/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:transition:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/3346202c45212b696ce64f20a6dfa839/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/transition-25.3.1.aar/3346202c45212b696ce64f20a6dfa839/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/6f7967b3237d6fda61fcd62c6bae289b/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-v4-25.3.1.aar/6f7967b3237d6fda61fcd62c6bae289b/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/3bc4e2cdba3fddb18c8f0964794bf026/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-25.3.1.aar/3bc4e2cdba3fddb18c8f0964794bf026/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/a2f9e810c81d2132a7ca023ab3e05c02/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.3.1.aar/a2f9e810c81d2132a7ca023ab3e05c02/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/aaaac0ba2002c46cee8fa61f52e51f09/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.3.1.aar/aaaac0ba2002c46cee8fa61f52e51f09/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/09fa1ba26313167bf57382bf8ad21eda/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-fragment-25.3.1.aar/09fa1ba26313167bf57382bf8ad21eda/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/4d2f4996a16008bf80340363fbd65725/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.3.1.aar/4d2f4996a16008bf80340363fbd65725/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/28df3e0fff2c5b7fbd21900b32a8e741/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.3.1.aar/28df3e0fff2c5b7fbd21900b32a8e741/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/a4b85a941b5ed24a752c2493a4400bc3/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.3.1.aar/a4b85a941b5ed24a752c2493a4400bc3/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/582ca0c3006dabda18f67db5b1c4a361/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/support-compat-25.3.1.aar/582ca0c3006dabda18f67db5b1c4a361/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/683a0c91a8e890ad41520be4632a6894/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] /Users/genghis/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/683a0c91a8e890ad41520be4632a6894/AndroidManifest.xml:26:9-47
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/genghis/cryptocracy/android/app/src/main/AndroidManifest.xml:1:1-26:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
