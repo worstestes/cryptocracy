@@ -23,7 +23,7 @@ const startTabs = () => {
                     icon: sources[1]
                 },
                 {
-                    screen: "cryptocracy.NewsBoardScreen",
+                    screen: "cryptocracy.NewsListScreen",
                     label: "News",
                     title: "News",
                     icon: sources[2]

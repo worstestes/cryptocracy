@@ -13,15 +13,31 @@ import {
 } from "react-native";
 import numeral from "numeral";
 
-import Icon from "react-native-vector-icons/MaterialCommunityIcons";
-import NewsDisplay from "../../components/NewsDisplay/NewsDisplay";
-import LineChart from "../../components/LineChart/LineChart";
+import Icon from "react-native-vector-icons/MaterialCommunityIcons"
+import LineChartView from "../../components/LineChartView/LineChartView";
 import CoinIcon from "../../UI/CoinIcon/CoinIcon";
 import DefaultButton from "../../UI/DefaultButton/DefaultButton";
+import HeadingText from "../../UI/HeadingText/HeadingText";
 
 class CoinDetail extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      name: this.props.selectedCoin.name,
+      coinSymbol: coinSymbol = this.props.selectedCoin.symbol,
+      price: this.props.selectedCoin.price,
+      rank: this.props.selectedCoin.rank,
+      marketCap: numeral(this.props.selectedCoin.market_cap_usd).format(
+        "$0,0[.]00"),
+      marketVol: numeral(this.props.selectedCoin["24h_volume_usd"]).format(
+        "$0,0[.]00"
+      ),
+      percentChangeHour: this.props.selectedCoin.percent_change_1h,
+      percentChangeWeek: this.props.selectedCoin.percent_change_7d,
+      supply: numeral(this.props.selectedCoin.available_supply).format(
+        "0,0.00"
+      )
+    }
   }
 
   saveCoinHandler = () => {
@@ -29,49 +45,29 @@ class CoinDetail extends Component {
   };
 
   render() {
-    const name = this.props.selectedCoin.name;
-    const coinSymbol = this.props.selectedCoin.symbol;
-    const price = this.props.selectedCoin.price;
-    const rank = this.props.selectedCoin.rank;
-    const marketCap = numeral(this.props.selectedCoin.market_cap_usd).format(
-      "$0,0[.]00"
-    );
-    const marketVol = numeral(this.props.selectedCoin["24h_volume_usd"]).format(
-      "$0,0[.]00"
-    );
-    const percentChangeHour = this.props.selectedCoin.percent_change_1h;
-    const percentChangeWeek = this.props.selectedCoin.percent_change_7d;
-    const supply = numeral(this.props.selectedCoin.available_supply).format(
-      "0,0.00"
-    );
     const priceToBTC = this.props.selectedCoin.price_btc;
-
-    let colorCheck = percentChangeHour.includes("-") ? "red" : "green";
+    const colorCheck = this.state.percentChangeHour.includes("-") ? "red" : "green";
 
     return (
       <View style={styles.main}>
         <View style={styles.coinHeaderContainer}>
           <CoinIcon
             style={{ margin: 2 }}
-            coinSymbol={coinSymbol}
+            coinSymbol={this.state.coinSymbol}
             size={22}
             color="#8ee4af"
           />
-          <Text style={styles.coinHeaderTitle}>{name}</Text>
+          <HeadingText style={styles.coinHeaderTitle}>{this.state.name}</HeadingText>
           <Text style={{ fontSize: 10, color: "white", marginBottom: 2 }}>
-            [{coinSymbol}]
+            [{this.state.coinSymbol}]
           </Text>
         </View>
-        <View style={styles.chartContainer}>
-          {/* <View style={styles.titleContainer}>
-            <Text style={styles.title}>Graphs</Text>
-          </View> */}
-          <LineChart symbol={coinSymbol} />
-        </View>
 
-        {/* <View style={styles.titleContainer}>
+        <LineChartView symbol={this.state.coinSymbol}/>
+
+        <View style={styles.titleContainer}>
           <Text style={styles.title}>Global Market</Text>
-        </View> */}
+        </View>
         <View style={styles.globalMarketData}>
           <View style={styles.topGlobalSection}>
             <View style={styles.topData}>
@@ -84,10 +80,10 @@ class CoinDetail extends Component {
                   marginLeft: 10
                 }}
               >
-                <Text style={styles.mainText}>{marketCap}</Text>
+                <Text style={styles.mainText}>{this.state.marketCap}</Text>
                 <Icon
                   name={
-                    percentChangeHour.includes("-")
+                    this.state.percentChangeHour.includes("-")
                       ? "trending-down"
                       : "trending-up"
                   }
@@ -102,26 +98,26 @@ class CoinDetail extends Component {
                     color: colorCheck
                   }}
                 >
-                  {percentChangeHour}%
+                  {this.state.percentChangeHour}%
                 </Text>
               </View>
             </View>
             <View style={styles.topData}>
               <Text style={styles.topDataTitleText}>Rank</Text>
               <View style={{ marginTop: 3 }}>
-                <Text style={styles.mainText}>#{rank}</Text>
+                <Text style={styles.mainText}>#{this.state.rank}</Text>
               </View>
             </View>
           </View>
           <View style={styles.bottomGlobalSection}>
             <View style={styles.bottomData}>
               <Text style={styles.topDataTitleText}>Volume(24h)</Text>
-              <Text style={styles.mainText}>{marketVol}</Text>
+              <Text style={styles.mainText}>{this.state.marketVol}</Text>
             </View>
             <View style={styles.bottomData}>
               <Text style={styles.topDataTitleText}>Avaiable Supply</Text>
               <Text style={styles.mainText}>
-                {supply} {coinSymbol}
+                {this.state.supply} {this.state.coinSymbol}
               </Text>
             </View>
           </View>
@@ -132,7 +128,7 @@ class CoinDetail extends Component {
             </View>
             <View style={styles.bottomData}>
               <Text style={styles.topDataTitleText}>Price Change (7d)</Text>
-              <Text style={styles.mainText}>{percentChangeWeek}%</Text>
+              <Text style={styles.mainText}>{this.state.percentChangeWeek}%</Text>
             </View>
           </View>
         </View>
@@ -179,19 +175,6 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     alignItems: "center",
     marginTop: 5
-  },
-  chartContainer: {
-    justifyContent: "center",
-    alignSelf: "center",
-    height: 280,
-    width: "80%",
-    shadowOpacity: 0.35,
-    shadowRadius: 1,
-    shadowColor: "black",
-    shadowOffset: { height: 0, width: 0 },
-    backgroundColor: "rgba(241,243,239,.9)",
-    borderRadius: 3,
-    marginBottom: 10
   },
   globalMarketData: {
     alignSelf: "center",

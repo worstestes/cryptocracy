@@ -25,7 +25,7 @@ class NewsBoard extends Component {
 
 const styles = StyleSheet.create({
  mainContainer: {
-    backgroundColor: "#151C24",
+    backgroundColor: "rgba(144, 159, 165, .4)",
      flex: 1
  }
 })

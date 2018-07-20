@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import { View, Text, FlatList, Image, StyleSheet, Linking } from "react-native";
+import { ScrollView, View, Text, FlatList, Image, StyleSheet, ActivityIndicator } from "react-native";
 import validator from "validator";
-import bc from "../../assets/blockchain.jpg";
+import moment from "moment";
+import FeaturedArticle from "../../UI/FeaturedArticles/FeaturedArticles";
 
 class NewsDisplay extends Component {
   constructor(props) {
@@ -9,59 +10,90 @@ class NewsDisplay extends Component {
     this.state = {
       name: props.name,
       articles: [],
-    //   failed: false
+      featuredArticles: [],
+      isLoaded: false,
+      first: {},
+      second: {},
+      third: {}
     };
   }
 
   componentDidMount() {
-    this.getNewsArticles().done();
+    this.getPopularArticles();
   }
 
-  async getNewsArticles() {
-    let newsSearch = "crypto+currency+blockchain"
-    const URL = `https://newsapi.org/v2/everything?q=${newsSearch}&from=2018-07-17&sortBy=popularity&apiKey=4a74b7e09d814adfaa78b6daf6ba8935`;
+  async getPopularArticles() {
+    let newsSearch = "cryptocurrency+market";
+    let currentDay = moment().format("YYYY-MM-DD");
+    const URL = `https://newsapi.org/v2/everything?q=${newsSearch}&from=${currentDay}&sortBy=popularity&apiKey=4a74b7e09d814adfaa78b6daf6ba8935`;
     const response = await fetch(URL);
     const json = await response.json();
+
     let filteredArticles = json.articles.filter(article => {
       return validator.isAscii(article.title);
     });
+
+    let articles = filteredArticles.slice(3, -1);
+    let featuredArticles = filteredArticles.slice(0, 3);
+
     this.setState(prevState => {
       return {
         ...prevState,
-        articles: filteredArticles
+        articles: articles,
+        filteredArticles: filteredArticles,
+        top: filteredArticles[0],
+        subOne: filteredArticles[1],
+        subTwo: filteredArticles[2],
+        isLoaded: true
       };
     });
   }
 
   render() {
-    return (
-      <FlatList
-        data={this.state.articles}
-        renderItem={article => (
-          <View style={styles.detailsContainer}>
-            <View style={styles.imageContainer}>
-              <Image
-                style={styles.articleImage}
-                source={{
-                  uri: article.item.urlToImage
-                }}
-              />
-            </View>
+    if(this.state.isLoaded) {
+      return (
+        <View style={{flex: 1}}>
+        <Text style={styles.title}>Most Recent</Text>
+        <FeaturedArticle featuredList={this.state.filteredArticles} />
+        {/* <View style={styles.topNews}>
+        <Text style={{color: "white", fontSize: 30}}>{this.state.filteredArticles[0].title}</Text>
+        </View> */}
+        <Text style={styles.title}>More News</Text>
+        <FlatList
+          data={this.state.articles}
+          renderItem={article => (
+            <View style={styles.detailsContainer}>
+              <View style={styles.imageContainer}>
+                <Image
+                  style={styles.articleImage}
+                  source={{
+                    uri: article.item.urlToImage
+                  }}
+                />
+              </View>
 
-            <View style={styles.textContainer}>
-              <View>
-                <Text
-                  style={styles.newsText}
-                  onPress={() => Linking.openURL(article.item.url)}
-                >
-                  {article.item.title}
-                </Text>
+              <View style={styles.textContainer}>
+                <View>
+                  <Text
+                    style={styles.newsText}
+                    onPress={() => Linking.openURL(article.item.url)}
+                  >
+                    {article.item.title}
+                  </Text>
+                </View>
               </View>
             </View>
-          </View>
-        )}
-        keyExtractor={article => article.url}
-      />
+          )}
+          keyExtractor={article => article.url}
+        />
+        </View>
+
+      )
+    }
+    return (
+      <View style={styles.topNews}>
+      <ActivityIndicator size="large" color="coral" />
+      </View>
     );
   }
 }
@@ -69,22 +101,23 @@ class NewsDisplay extends Component {
 const styles = StyleSheet.create({
   detailsContainer: {
     marginBottom: 1,
-    padding: 5,
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "rgba(104,122,143,0.83)"
+    backgroundColor: "rgb(227, 228, 232)",
+    marginLeft: 3,
+    marginRight: 3,
+    marginTop: 1
   },
   textContainer: {
-    flex: 0.7,
+    flex: 0.7
   },
   imageContainer: {
     alignItems: "center",
     flex: 0.3,
     marginTop: 10,
-    marginBottom: 10,
+    marginBottom: 10
   },
   newsText: {
-    color: "white",
     fontSize: 13,
     fontWeight: "bold"
   },
@@ -93,6 +126,11 @@ const styles = StyleSheet.create({
     height: 60,
     borderWidth: 2,
     borderColor: "#f1f3ef"
+  },
+  title: {
+    fontSize: 12,
+    fontWeight: "bold",
+    margin: 3
   }
 });
 
