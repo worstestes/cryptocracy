@@ -10,7 +10,7 @@ import DefaultTextInput from "../../UI/DefaultInput/DefaultInput";
 import Icon from "react-native-vector-icons/Foundation";
 
 import CryptoList from "../../components/CryptoList/CryptoList";
-import CurrencyGlobal from "../../components/CurrencyGlobal/CurrencyGlobal";
+import GlobalMarketFeed from "../../components/GlobalMarketFeed/GlobalMarketFeed";
 
 class Dashboard extends Component {
   static navigatorStyle = {
@@ -90,51 +90,47 @@ class Dashboard extends Component {
 
   render() {
     let content = (
-        <View style={styles.loading}>
+      <View style={styles.loading}>
         <ActivityIndicator size="large" color="#4d87a0" />
       </View>
-    )
+    );
 
-    if(this.state.isLoaded) {
-        content = (
-            <View style={styles.main}>
-              <View style={styles.board}>
-                <CurrencyGlobal
-                  activeCurrencies={this.state.totalMarketData.activeCurrencies}
-                  activeMarkets={this.state.totalMarketData.activeMarkets}
-                  bitcoinPercentage={this.state.totalMarketData.bitcoinPercentage}
-                  totalMarketCap={this.state.totalMarketData.totalMarketCap}
-                  totalMarketVolume={this.state.totalMarketData.totalMarketVolume}
-                />
-              </View>
-              <View style={styles.searchSection}>
-                <Icon
-                  style={styles.searchIcon}
-                  name="magnifying-glass"
-                  size={20}
-                  color="#000"
-                />
-                <DefaultTextInput
-                  style={styles.input}
-                  placeholder="Search"
-                  onChangeText={val => this.searchTextHandler(val)}
-                  underlineColorAndroid="transparent"
-                />
-              </View>
-              <CryptoList
-                coins={this.state.currencyData}
-                onSelect={this.coinSelectedHandler}
-                searchedValue={this.state.searchText}
-              />
-            </View>
-          );
+    if (this.state.isLoaded) {
+      content = (
+        <View style={styles.main}>
+          <View style={styles.board}>
+            <GlobalMarketFeed
+              activeCurrencies={this.state.totalMarketData.activeCurrencies}
+              activeMarkets={this.state.totalMarketData.activeMarkets}
+              bitcoinPercentage={this.state.totalMarketData.bitcoinPercentage}
+              totalMarketCap={this.state.totalMarketData.totalMarketCap}
+              totalMarketVolume={this.state.totalMarketData.totalMarketVolume}
+            />
+          </View>
+          <View style={styles.searchSection}>
+            <Icon
+              style={styles.searchIcon}
+              name="magnifying-glass"
+              size={20}
+              color="#000"
+            />
+            <DefaultTextInput
+              style={styles.input}
+              placeholder="Search"
+              onChangeText={val => this.searchTextHandler(val)}
+              underlineColorAndroid="transparent"
+            />
+          </View>
+          <CryptoList
+            coins={this.state.currencyData}
+            onSelect={this.coinSelectedHandler}
+            searchedValue={this.state.searchText}
+          />
+        </View>
+      );
     }
 
-    return (
-        <View>
-        {content}
-        </View>
-    );
+    return <View>{content}</View>;
   }
 }
 
@@ -160,7 +156,7 @@ const styles = StyleSheet.create({
     padding: 30
   },
   loading: {
-      marginTop: "70%"
+    marginTop: "70%"
   }
 });
 

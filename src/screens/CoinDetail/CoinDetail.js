@@ -39,10 +39,6 @@ class CoinDetail extends Component {
     this.props.onAddCoin(this.props.selectedCoin);
   };
 
-  onPress= () => {
-    alert('Hello')
-  }
-
   render() {
     colorCheck = this.state.coin.percentChangeHour.includes("-")
       ? "red"
@@ -79,11 +75,10 @@ class CoinDetail extends Component {
               shadowOffset: { height: 0, width: 0 }
             }}
             color="#8ee4af"
-            onPress={() => alert("Pressed")}
+            onPress={this.saveCoinHandler}
           >
             <Text style={{ fontSize: 10 }}>Watch</Text>
           </DefaultButton>
-
         </View>
       </View>
     );

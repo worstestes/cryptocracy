@@ -1,8 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity, Image } from "react-native";
 import numeral from "numeral";
-import CoinIcon from '../../UI/CoinIcon/CoinIcon';
-
+import CoinIcon from "../../UI/CoinIcon/CoinIcon";
 
 const WatchListItem = props => {
   let name = props.coinName;
@@ -13,7 +12,7 @@ const WatchListItem = props => {
   let marketVol = numeral(props.marketVol)
     .format("(0.00 a)")
     .toUpperCase();
-  let price = numeral(props.price).format('$0,0.00');
+  let price = numeral(props.price).format("$0,0.00");
   let percentChangeHour = `${props.percentChangeHour}%`;
 
   return (
@@ -21,20 +20,30 @@ const WatchListItem = props => {
       <View style={styles.listItem}>
         <View style={styles.rankIcon}>
           <Text style={styles.coinRank}>{props.rank}</Text>
-        <CoinIcon coinSymbol={symbol} size={30} color="#8ee4af"/>
+          <CoinIcon coinSymbol={symbol} size={30} color="white" />
         </View>
         <View>
-              <Text style={styles.coinName}>{name}</Text>
-              <View style={styles.coinPriceContainer}>
-                <Text style={styles.coinPrice}>{price}</Text>
-                <Text style={percentChangeHour.includes('-') ? styles.coinNegativeHourChange : styles.coinPositiveHourChange}>({percentChangeHour.includes('-') ? percentChangeHour : `+${percentChangeHour}`})</Text>
-              </View>
+          <Text style={styles.coinName}>{name}</Text>
+          <View style={styles.coinPriceContainer}>
+            <Text style={styles.coinPrice}>{price}</Text>
+            <Text
+              style={
+                percentChangeHour.includes("-")
+                  ? styles.coinNegativeHourChange
+                  : styles.coinPositiveHourChange
+              }
+            >
+              ({percentChangeHour.includes("-")
+                ? percentChangeHour
+                : `+${percentChangeHour}`})
+            </Text>
+          </View>
         </View>
         <View style={styles.market}>
-            <View>
-              <Text style={styles.coinCap}>${marketCap}</Text>
-              <Text style={styles.coinVol}>${marketVol}</Text>
-            </View>
+          <View>
+            <Text style={styles.coinCap}>${marketCap}</Text>
+            <Text style={styles.coinVol}>${marketVol}</Text>
+          </View>
         </View>
       </View>
     </TouchableOpacity>
@@ -59,7 +68,7 @@ const styles = StyleSheet.create({
   coinPriceContainer: {
     flexDirection: "row",
     paddingTop: 1
-    },
+  },
   coinPrice: {
     fontWeight: "bold",
     color: "white",
@@ -68,39 +77,40 @@ const styles = StyleSheet.create({
   },
   coinPositiveHourChange: {
     fontWeight: "bold",
-    color: '#86f074',
+    color: "#86f074",
     fontSize: 12,
-    marginLeft: 10,
+    marginLeft: 10
   },
-  coinNegativeHourChange:{
+  coinNegativeHourChange: {
     fontWeight: "bold",
     color: "#ff0000",
     fontSize: 12,
-    marginLeft: 10,
+    marginLeft: 10
   },
   coinCap: {
     color: "white",
     fontWeight: "bold",
     marginLeft: 10,
-    textAlign: "right"    
+    textAlign: "right"
   },
   coinVol: {
     color: "#dfdfdf",
     fontSize: 11,
     marginLeft: 10,
-    textAlign: "right"    
+    textAlign: "right"
   },
   coinRank: {
     paddingRight: 10,
     margin: 5
   },
   market: {
-    flex: 1, alignItems: "flex-end"
-    },
-    rankIcon: {
-      flexDirection: "row",
-      paddingRight: 5
-    }
+    flex: 1,
+    alignItems: "flex-end"
+  },
+  rankIcon: {
+    flexDirection: "row",
+    paddingRight: 5
+  }
 });
 
 export default WatchListItem;

@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, Image, StyleSheet } from "react-native";
-import moment from 'moment'
+import moment from "moment";
 const FeaturedArticle = props => (
   <View style={styles.mainContainer}>
     <View style={styles.topSection}>
@@ -12,8 +12,8 @@ const FeaturedArticle = props => (
           }}
         />
         <View style={styles.topHeadlineBackground}>
-        <Text style={styles.topHeadline}>{props.featuredList[0].title}</Text>
-</View>
+          <Text style={styles.topHeadline}>{props.featuredList[0].title}</Text>
+        </View>
       </View>
     </View>
     <View style={styles.bottomSection}>
@@ -28,7 +28,9 @@ const FeaturedArticle = props => (
           <Text style={styles.bottomHeadline}>
             {props.featuredList[1].title}
           </Text>
-          <Text style={styles.publishedTime}>{moment(props.featuredList[1].publishedAt).fromNow()}</Text>
+          <Text style={styles.publishedTime}>
+            {moment(props.featuredList[1].publishedAt).fromNow()}
+          </Text>
         </View>
       </View>
 
@@ -43,7 +45,9 @@ const FeaturedArticle = props => (
           <Text style={styles.bottomHeadline}>
             {props.featuredList[2].title}
           </Text>
-          <Text style={styles.publishedTime}>{moment(props.featuredList[2].publishedAt).fromNow()}</Text>
+          <Text style={styles.publishedTime}>
+            {moment(props.featuredList[2].publishedAt).fromNow()}
+          </Text>
         </View>
       </View>
     </View>
@@ -116,7 +120,7 @@ const styles = StyleSheet.create({
   },
   bottomSubTitleContainer: {
     flex: 1,
-    alignItems: 'center',
+    alignItems: "center",
     justifyContent: "center"
   },
   publishedTime: {

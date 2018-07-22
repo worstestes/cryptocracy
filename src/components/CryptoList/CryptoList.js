@@ -4,13 +4,15 @@ import { StyleSheet, FlatList, View } from "react-native";
 import CryptoListItem from "../CryptoListItem/CryptoListItem";
 
 const CryptoList = props => {
-  const searchedTextValue = props.coins.filter(coin => coin.name.includes(props.searchedValue));
+  const searchedTextValue = props.coins.filter(coin =>
+    coin.name.includes(props.searchedValue)
+  );
 
   return (
     <FlatList
       style={styles.listContainer}
       data={props.searchedText !== "" ? searchedTextValue : props.coins}
-      renderItem={(info) => (
+      renderItem={info => (
         <CryptoListItem
           coinName={info.item.name}
           coinSymbol={info.item.symbol}
@@ -30,11 +32,8 @@ const CryptoList = props => {
 const styles = StyleSheet.create({
   listContainer: {
     width: "100%",
-    height: "90%",
+    height: "90%"
   }
 });
 
 export default CryptoList;
-
-
-

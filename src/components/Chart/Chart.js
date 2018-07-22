@@ -5,7 +5,7 @@ import {
   VictoryChart,
   VictoryContainer,
   VictoryLabel,
-  VictoryAxis,
+  VictoryAxis
 } from "victory-native";
 
 const Chart = props => {

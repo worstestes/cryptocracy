@@ -1,11 +1,16 @@
 import React, { Component } from "react";
-import { View, Text, TextInput, StyleSheet, ImageBackground } from "react-native";
+import {
+  View,
+  Text,
+  TextInput,
+  StyleSheet,
+  ImageBackground
+} from "react-native";
 
-import startMainTabs from '../MainTabs/startMainTabs';
+import startMainTabs from "../MainTabs/startMainTabs";
 import HeadingText from "../../UI/HeadingText/HeadingText";
 import DefaultTextInput from "../../UI/DefaultInput/DefaultInput";
 import DefaultButton from "../../UI/DefaultButton/DefaultButton";
-import test from '../../assets/seal.png';
 
 class AuthScreen extends Component {
   static navigatorStyle = {
@@ -13,8 +18,8 @@ class AuthScreen extends Component {
   };
 
   loginHandler = () => {
-      startMainTabs();
-  }
+    startMainTabs();
+  };
 
   render() {
     return (
@@ -27,10 +32,9 @@ class AuthScreen extends Component {
           <DefaultTextInput style={styles.input} placeholder="Email" />
           <DefaultTextInput style={styles.input} placeholder="Password" />
         </View>
-        <DefaultButton 
-        color="#4d87a0"
-        onPress={this.loginHandler}
-        >Submit</DefaultButton>
+        <DefaultButton color="#4d87a0" onPress={this.loginHandler}>
+          Submit
+        </DefaultButton>
       </View>
     );
   }
@@ -41,17 +45,17 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#151C24",
+    backgroundColor: "#151C24"
   },
   inputContainer: {
     width: "80%"
   },
   input: {
-      backgroundColor: "#eee",
-      borderColor: "#bbb"
+    backgroundColor: "#eee",
+    borderColor: "#bbb"
   },
   title: {
-      color: "white"
+    color: "white"
   }
 });
 

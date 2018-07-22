@@ -16,8 +16,6 @@ class WatchlistScreen extends Component {
     }
 
     render() {
-        console.log(this.props.savedCoin);
-
         return (
             <View style={styles.mainContainer}>
                 <WatchList

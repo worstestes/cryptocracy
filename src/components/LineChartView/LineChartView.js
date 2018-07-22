@@ -8,9 +8,9 @@ import {
   StyleSheet
 } from "react-native";
 import Chart from "../Chart/Chart";
-import DefaultButton from "../../UI/DefaultButton/DefaultButton"
+import DefaultButton from "../../UI/DefaultButton/DefaultButton";
 import moment from "moment";
-import SimplePicker from 'react-native-simple-picker'
+import SimplePicker from "react-native-simple-picker";
 
 class LineChartView extends Component {
   constructor(props) {
@@ -28,7 +28,7 @@ class LineChartView extends Component {
   }
 
   async getChartingData() {
-    let graphDataArray = [];  
+    let graphDataArray = [];
     for (let weekNumber = 0; weekNumber <= 8; weekNumber++) {
       let weeksFromCurrentDay = moment()
         .subtract(7 * weekNumber, "days")
@@ -55,7 +55,7 @@ class LineChartView extends Component {
         isLoaded: true
       };
     });
-    }
+  }
 
   render() {
     return (
