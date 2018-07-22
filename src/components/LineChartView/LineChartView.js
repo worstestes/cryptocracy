@@ -4,10 +4,13 @@ import {
   Text,
   ActivityIndicator,
   TouchableOpacity,
+  Button,
   StyleSheet
 } from "react-native";
-import Chart from "../../UI/Chart/Chart";
+import Chart from "../Chart/Chart";
+import DefaultButton from "../../UI/DefaultButton/DefaultButton"
 import moment from "moment";
+import SimplePicker from 'react-native-simple-picker'
 
 class LineChartView extends Component {
   constructor(props) {
@@ -16,8 +19,7 @@ class LineChartView extends Component {
     this.state = {
       symbol: props.symbol,
       isLoaded: false,
-      graphingData: [],
-      dateRangeChange: 7
+      graphingData: []
     };
   }
 
@@ -26,15 +28,10 @@ class LineChartView extends Component {
   }
 
   async getChartingData() {
-    let graphDataArray = [];
-
-    for (
-      let weekNumber = 0;
-      weekNumber <= this.state.dateRangeChange;
-      weekNumber++
-    ) {
+    let graphDataArray = [];  
+    for (let weekNumber = 0; weekNumber <= 8; weekNumber++) {
       let weeksFromCurrentDay = moment()
-        .subtract(this.state.dateRangeChange * weekNumber, "days")
+        .subtract(7 * weekNumber, "days")
         .unix();
       let URL = `https://min-api.cryptocompare.com/data/pricehistorical?fsym=${
         this.state.symbol
@@ -58,31 +55,11 @@ class LineChartView extends Component {
         isLoaded: true
       };
     });
-  }
+    }
 
   render() {
     return (
       <View style={styles.chartContainer}>
-        <View style={styles.navChartSection}>
-          <View style={styles.tabPickContainer}>
-            <TouchableOpacity style={styles.tabPick}>
-              <Text style={{ fontSize: 9, paddingRight: 3 }}>1WK</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity style={styles.tabPick}>
-              <Text style={{ fontSize: 9, paddingRight: 3 }}>2WK</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity style={styles.tabPick}>
-              <Text style={{ fontSize: 9, paddingRight: 3 }}>3WK</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity style={styles.tabPick}>
-              <Text style={{ fontSize: 9, paddingRight: 3 }}>4WK</Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-
         <Chart
           graphingData={this.state.graphingData}
           isLoaded={this.state.isLoaded}
@@ -105,25 +82,6 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(241,243,239,.9)",
     borderRadius: 3,
     marginBottom: 10
-  },
-  navChartSection: {
-    width: "100%",
-    backgroundColor: "coral",
-    borderBottomWidth: 5,
-    borderColor: "#f1f3ef"
-  },
-  tabPickContainer: {
-    flexDirection: "row",
-    width: "40%",
-    height: 25,
-    margin: 2
-  },
-  tabPick: {
-    alignItems: "center",
-    justifyContent: "center",
-    flex: 1,
-    height: "100%",
-    backgroundColor: "yellow"
   }
 });
 

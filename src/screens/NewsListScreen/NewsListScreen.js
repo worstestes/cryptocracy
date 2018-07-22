@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-import NewsDisplay from '../../components/NewsDisplay/NewsDisplay';
+import NewsDisplay from '../../components/NewsDisplay/NewsFeedList';
 
 class NewsBoard extends Component {
     static navigatorStyle = {
@@ -25,7 +25,7 @@ class NewsBoard extends Component {
 
 const styles = StyleSheet.create({
  mainContainer: {
-    backgroundColor: "rgba(144, 159, 165, .4)",
+    backgroundColor: "rgba(104,122,143,0.75)",
      flex: 1
  }
 })

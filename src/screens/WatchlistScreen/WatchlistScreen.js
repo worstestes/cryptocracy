@@ -19,7 +19,7 @@ class WatchlistScreen extends Component {
         console.log(this.props.savedCoin);
 
         return (
-            <View>
+            <View style={styles.mainContainer}>
                 <WatchList
                  coins={this.props.savedCoin}
                  />
@@ -31,7 +31,8 @@ class WatchlistScreen extends Component {
 
 const styles = StyleSheet.create({
  mainContainer: {
-    backgroundColor: "#151C24",
+    backgroundColor: "rgba(104,122,143,0.75)",
+    width: "100%",
      flex: 1
  }
 })
