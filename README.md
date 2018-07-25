@@ -1,6 +1,6 @@
 # Cryptocracy
 
-Cryptocracy - A React-Native based Cryptocurrency Market tracking app. Follow the market with up-to-date financial/market data, save your favorites to your watchlist to watch specific currencies, and keep in the loop with the news section, bringing you up to the minute market news.
+A React-Native based Cryptocurrency Market tracking app. Follow the market with up-to-date financial/market data, save your favorites to your watchlist to watch specific currencies, and keep in the loop with the news section, bringing you up to the minute market news.
 
 ## Getting Started
 
