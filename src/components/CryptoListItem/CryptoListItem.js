@@ -19,7 +19,7 @@ const CryptoListItem = props => {
       <View style={styles.listItem}>
         <View style={styles.rankIcon}>
           <Text style={styles.coinRank}>{props.rank}</Text>
-          <CoinIcon coinSymbol={props.coinSymbol} size={30} color="#8ee4af" />
+          <CoinIcon coinSymbol={props.coinSymbol} size={29} color="#8ee4af" />
         </View>
         <View>
           <Text style={styles.coinName}>{name}</Text>
